@@ -49,4 +49,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         camera_space.setOnClickListener(this);
         store_space.setOnClickListener(this);
     }
+
+
+
+    @Override
+    public void onClick(View v){
+        switch(v.getId()){
+            case (R.id.todaypick_space):
+                //TODO 오늘입은 옷은?을 구상하는 함수를 쓰세요
+                Toast.makeText(getApplicationContext(), "뭐", Toast.LENGTH_SHORT).show();
+                break;
+            case (R.id.history_space):
+                //TODO 히스토리이이이잉?을 구상하는 함수를 쓰세요
+                Toast.makeText(getApplicationContext(), "왜", Toast.LENGTH_SHORT).show();
+                break;
+            case (R.id.camera_space):
+                //TODO 카메라..를 구상하는 함수를 쓰세요
+                Toast.makeText(getApplicationContext(), "싫어", Toast.LENGTH_SHORT).show();
+                break;
+            case (R.id.store_space):
+                //TODO 상점 뀨뀨 를 구상하는 함수를 쓰세요
+                Toast.makeText(getApplicationContext(), "저리가", Toast.LENGTH_SHORT).show();
+                break;
+        }
+    }
+
 }
