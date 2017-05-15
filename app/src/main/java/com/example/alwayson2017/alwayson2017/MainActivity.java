@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
-    //»ç½Ç ¹öÆ°¸»°í ´Ù¸¥°Å ½á¾ßÇÏ´Âµ¥ ÀÏ´Ü ÇÁ·ÎÅäÅ¸ÀÔ ³»¶ó°í ÇØ¼­ ¹öÆ°À¸·Î ±¸¼ºÇßÀ½¿©
+    //ì‚¬ì‹¤ ë²„íŠ¼ë§ê³  ë‹¤ë¥¸ê±° ì¨ì•¼í•˜ëŠ”ë° ì¼ë‹¨ í”„ë¡œí† íƒ€ì… ë‚´ë¼ê³  í•´ì„œ ë²„íŠ¼ìœ¼ë¡œ êµ¬ì„±í–ˆìŒì—¬
     Button todaypick_space;
     Button history_space;
     Button camera_space;
@@ -50,26 +50,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         store_space.setOnClickListener(this);
     }
 
-
-
     @Override
     public void onClick(View v){
         switch(v.getId()){
             case (R.id.todaypick_space):
-                //TODO ¿À´ÃÀÔÀº ¿ÊÀº?À» ±¸»óÇÏ´Â ÇÔ¼ö¸¦ ¾²¼¼¿ä
-                Toast.makeText(getApplicationContext(), "¹¹", Toast.LENGTH_SHORT).show();
+                //TODO ì˜¤ëŠ˜ì…ì€ ì˜·ì€?ì„ êµ¬ìƒí•˜ëŠ” í•¨ìˆ˜ë¥¼ ì“°ì„¸ìš”
+                Toast.makeText(getApplicationContext(), "ë­", Toast.LENGTH_SHORT).show();
                 break;
             case (R.id.history_space):
-                //TODO È÷½ºÅä¸®ÀÌÀÌÀÌÀ×?À» ±¸»óÇÏ´Â ÇÔ¼ö¸¦ ¾²¼¼¿ä
-                Toast.makeText(getApplicationContext(), "¿Ö", Toast.LENGTH_SHORT).show();
+                //TODO íˆìŠ¤í† ë¦¬ì´ì´ì´ì‰?ì„ êµ¬ìƒí•˜ëŠ” í•¨ìˆ˜ë¥¼ ì“°ì„¸ìš”
+                Toast.makeText(getApplicationContext(), "ì™œ", Toast.LENGTH_SHORT).show();
                 break;
             case (R.id.camera_space):
-                //TODO Ä«¸Ş¶ó..¸¦ ±¸»óÇÏ´Â ÇÔ¼ö¸¦ ¾²¼¼¿ä
-                Toast.makeText(getApplicationContext(), "½È¾î", Toast.LENGTH_SHORT).show();
+                //TODO ì¹´ë©”ë¼..ë¥¼ êµ¬ìƒí•˜ëŠ” í•¨ìˆ˜ë¥¼ ì“°ì„¸ìš”
+                Toast.makeText(getApplicationContext(), "ì‹«ì–´", Toast.LENGTH_SHORT).show();
                 break;
             case (R.id.store_space):
-                //TODO »óÁ¡ ²ó²ó ¸¦ ±¸»óÇÏ´Â ÇÔ¼ö¸¦ ¾²¼¼¿ä
-                Toast.makeText(getApplicationContext(), "Àú¸®°¡", Toast.LENGTH_SHORT).show();
+                //TODO ìƒì  ë€¨ë€¨ ë¥¼ êµ¬ìƒí•˜ëŠ” í•¨ìˆ˜ë¥¼ ì“°ì„¸ìš”
+                Toast.makeText(getApplicationContext(), "ì €ë¦¬ê°€", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
